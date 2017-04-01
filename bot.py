@@ -105,8 +105,8 @@ def main():
     except FileNotFoundError:
         rick_rolls_found = set()
 
-    subreddit = reddit.subreddit('test')
-    for submission in subreddit.hot(limit=150):
+    subreddit = reddit.subreddit('all')
+    for submission in subreddit.hot(limit=1000):
         post_title = submission.title
         for word in key_words:
             if word in post_title.lower() and post_title not in rick_rolls_found:
