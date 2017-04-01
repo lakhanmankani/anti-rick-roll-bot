@@ -86,7 +86,7 @@ def rick_rolls_in_text(id_, body):
 
 def main():
     reddit_client_id = getpass.getpass("Enter your reddit client id: ")
-    reddit_client_secret = getpass.getpass("Enter your reddit client secret")
+    reddit_client_secret = getpass.getpass("Enter your reddit client secret: ")
     google_api_key = getpass.getpass("Enter your google api key: ")
     reddit_username = input("Enter your reddit username: ")
     reddit_password = getpass.getpass("Enter your reddit password: ")
